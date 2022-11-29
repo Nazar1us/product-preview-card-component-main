@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color:hsl(30, 38%, 92%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+section {
+    display: block;
+    width: calc(100% - 32px);
+    margin: 0 auto;
+    background-color: white;
+    margin-top: 32px;
+    border-radius: 1rem;
+    align-items:center ;
+
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin: 1rem;
+}
+
+.desktop-img {
+    display: none;
+
+}
+
+.mobile-image {
+    display: block;
+    width: 100%;
+    /* min-width: 343px; */
+    border-radius: 1rem 1rem 0 0;
+    margin: 0 auto;
+}
+
+.price {
+    margin-bottom: 1rem;
+    font-family: 'Fraunces', serif;
+}
+
+h4,  
+h1 + p {
+    color: hsl(228, 12%, 48%);
+}
+
+h4 {
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+}
+
+h1 + p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 1.6rem;
+}
+
+span {
+    margin-left: 2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    display: inline-flex;
+    justify-content: center;
+    color: black;
+}
+
+.actuall {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.2rem;
+    color: rgb(10, 135, 10);
+    display: flex;
+    align-items: center;
+}
+
+.last-price {
+    font-weight: lighter;
+    color: hsl(228, 12%, 48%);;
+}
+
+.btn {
+    display: flex;
+    margin: 0 auto;
+    background: rgb(10, 135, 10);
+    width: 100%;
+    padding: 15px 0;
+    justify-content: center;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+.svg-cart {
+    margin-right: 10px;
+
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: rgb(6, 87, 6);
+    cursor: pointer;
+}
+
+@media (min-width: 1330px ) {
+
+    body {
+        display: flex;
+        height: 100vh;
+        align-items: center;
+    }
+
+    .mobile-image {
+        display: none;
+    }
+
+    .desktop-img {
+        display:inherit;
+        min-width: 300px;
+        width: 100%;
+        border-radius: 1rem 0 0 1rem;
+    }
+    section {
+        display:flex;
+        width: 50%;
+        align-items: center;
+        margin-top: 0;
+    }
+    .card-image {
+        width: 50%;
+        
+    }
+    .card {
+        width: 70%;
+        /* gap: 3rem; */
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h1 + p {
+        font-size: 1.2rem;
+    }
+
+    .price {
+
+        margin: 1rem 0;
+    }
+    .btn {
+        margin-top: 2rem;
+    }
+}
+
